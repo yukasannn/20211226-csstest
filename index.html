@@ -7,87 +7,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./CSS/reset.css" />
-  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="./CSS/CSStest.css" />
 </head>
 
-<!--トップ画像-->
-<header>
-  <section class="chatchcopy">
-    <div class="chatchcopy-img">
-      <img src="./img/firstview.jpg" />
-      <h1>キャッチコピー</h1>
-    </div>
-  </section>
-</header>
-
-<!--About-->
-<section class="About">
-  <h2 class="About-ttl">About</h2>
-  <p>COACHTECH(コーチテック)はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>
-    プログラミング未経験の方でも、<strong>「独自の学習ノウハウ」</strong>>
-    でフリーランスエンジニアを目指すことができます。</p>
-</section>
-
-<!--ブログ-->
-<section class="blog">
-  <h2 class="blog-container-ttl">ブログ</h2>
-  <div class="blog-card-container">
-    <!-- card-item -->
-    <div class="card-item">
-      <a class="card-link" href="#">
-        <img sclass="card-img" src="./img/blog__eyecatch1.jpg" alt="">
-        <h2 class="card-tit">コーチテックブログのタイトルがここに入ります。</h2>
-      </a><!-- /card-content -->
-    </div><!-- /card-item -->
-
-    <!-- card-item -->
-    <div class="card-item">
-      <a class="card-link" href="#">
-        <img sclass="card-img" src="./img/blog__eyecatch2.jpg" alt="">
-        <h2 class="card-tit">コーチテックブログのタイトルがここに入ります。</h2>
-      </a><!-- /card-content -->
-    </div><!-- /card-item -->
-
-    <!-- card-item -->
-    <div class="card-item">
-      <a class="card-link" href="#">
-        <img sclass="card-img" src="./img/blog__eyecatch3.jpg" alt="">
-        <h2 class="card-tit">コーチテックブログのタイトルがここに入ります。</h2>
-      </a><!-- /card-content -->
-    </div><!-- /card-item -->
-  </div>
-</section>
-
-<!--お問い合わせフォーム-->
-<form>
-  <h2>問い合わせ</h2>
-  <div>
-    <label>名前</label>
-    <input type="text" name="name" value="">
-  </div>
-  <div>
-    <label>メールアドレス</label>
-    <input type="text" name="email" value="">
-  </div>
-  <div>
-    <label>用件</label>
-    <select name="item">
-      <option value="">広告掲載について</option>
-    </select>
-  </div>
-  <div>
-    <label>内容</label>
-    <textarea name="content" rows="5"></textarea>
-  </div>
-  <button type="delete">削除</button>
-  <button type="submit">送信</button>
-</form>
-
-<div class="blog">
-  <h2>ブログ</h2>
-</div>
-
 <body>
+
+  <!--トップ画像-->
+  <header>
+    <section class="firstview">
+      <div class="firstview-img">
+        <img src="./img/firstview.jpg" />
+      </div>
+      <h1>キャッチコピー</h1>
+    </section>
+  </header>
+
+  <!--About-->
+  <section class="About">
+    <h2 class="About-ttl">About</h2>
+    <p>COACHTECH(コーチテック)はフリーランス特化型のオンラインコーチングプログラミングスクールです。<br>
+      プログラミング未経験の方でも、<strong>「独自の学習ノウハウ」</strong>
+      でフリーランスエンジニアを目指すことができます。</p>
+  </section>
+
+  <!--ブログ-->
+  <h2 class="blog-ttl">ブログ</h2>
+  <div class="wrapper">
+    <div class="card">
+      <div class="content-img">
+        <img src="./img/blog__eyecatch1.jpg" />
+      </div>
+      <div class="text-box">
+        <h2 class="card-tit">コーチテックブログのタイトルがここに入ります。</h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content-img">
+        <img src="./img/blog__eyecatch2.jpg" />
+      </div>
+      <div class="text-box">
+        <h2 class="card-tit">コーチテックブログのタイトルがここに入ります。</h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content-img">
+        <img src="./img/blog__eyecatch3.jpg" />
+      </div>
+      <div class="text-box">
+        <h2 class="card-tit">コーチテックブログのタイトルがここに入ります。</h2>
+      </div>
+    </div>
+  </div>
+
+  <!--お問い合わせフォーム-->
+  <h2 class="form-ttl">問い合わせ</h2>
+  <form class="form" name="contact" method="POST">
+    <div class="form-item">
+      <p class="form-item-label">氏名</p>
+      <input type="text" name="name" class="form-item-input" placeholder="">
+    </div>
+    <div class="form-item">
+      <p class="form-item-label">メールアドレス</p>
+      <input type="email" name="email" class="form-item-input" placeholder="">
+    </div>
+    <div class="form-item">
+      <p class="form-item-label">用件</p>
+      <select name="section-form-item">
+        <option value="">広告掲載について</option>
+      </select>
+    </div>
+    <div class="form-item">
+      <p class="form-item-label">内容</p>
+      <textarea name="textarea" class="form-item-textarea"></textarea>
+    </div>
+    <input type="submit" class="form-btn" value="削除">
+    <input type="submit" class="form-btn" value="送信">
+  </form>
 </body>
 
 </html>

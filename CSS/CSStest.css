@@ -1,0 +1,130 @@
+html {
+  max-width: 1300px;
+}
+
+.firstview img {
+  width: 1000px;
+  height: 440px;
+  position: relative;
+  margin: 0 150px;
+}
+
+.firstview h1 {
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  color: #ffffff;
+}
+
+.section {
+  width: 1000px;
+  margin: 70px 0;
+}
+
+/* about */
+.About {
+  margin: 70px auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.About h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/*--ブログ--*/
+.blog-ttl {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 30%;
+  cursor: pointer;
+}
+
+.text-box {
+  padding: 15px;
+}
+
+.content-img {
+  text-align: center;
+  background: #fff;
+}
+
+/* お問い合わせ */
+.form {
+  width: 780px;
+  margin: 70px auto;
+}
+
+.form-ttl {
+  margin: 70px auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+.form {
+  width: 60%;
+}
+
+.form-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.form-item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.form-item-label {
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-item-input {
+  border: 1px solid #ddd;
+  margin-left: 40px;
+  padding: 0 10px;
+  height: 20px;
+  width: 100%;
+  background: #fff;
+  font-size: 10px;
+}
+.form-item-textarea {
+  border: 1px solid #ddd;
+  margin-left: 40px;
+  padding: 0 10px;
+  height: 200px;
+  width: 100%;
+  font-size: 10px;
+}
+
+.form-btn {
+  margin: 32px auto 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
